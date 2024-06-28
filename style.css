@@ -1,0 +1,65 @@
+/**
+  * @file :-style.css
+  * @brief :-this code is style of digital clock
+  * @author :-Aaryan Nanaware (aaryannanaware2105@gmail.com)
+  * @date :- 18/06/2024 17:21:42 PM
+  */
+
+
+/* Global reset and color setting*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    color: rgba(247, 242, 245, 0.875); /* Adjust this as needed */
+}
+
+/* Body background gradient */
+body {
+    background: linear-gradient(135deg, #111, #ccc); /* Adjust colors as needed */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clock {
+    width: 550px;
+    height: 150px;
+    border: 2px solid white;
+    position: relative; /* Changed to relative for proper centering */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Added padding for better visual separation */
+    background-color: rgb(12, 13, 14); /* Added background color */
+    border-radius: 10px; /* Adjust border radius as needed */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Adjust box shadow as needed */
+}
+
+/* Styles for hour, minute, second divs */
+.clock div {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #ccc;
+    border-radius: 50px; /*Adjust border radius as needed */
+}
+
+/* Styles for : span */
+.clock span {
+    font-weight: bold; /* Adjust font weight as needed */
+    font-size: 60px;
+    color: white; /* Adjust color as needed */
+}
+
+:hover {
+    border: 1.5px  dotted white;
+} 
